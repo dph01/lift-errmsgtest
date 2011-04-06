@@ -15,12 +15,10 @@ class HelloWorld {
   var name = ""
 	  
   def updateResults() = {
-	println("in updateResults, name = " + name)
 	SetHtml("result", if (name != "" ) Text("Hello " + name) else Text("") )
   }
   
   def setName(n: String) {
-	println("in setName, name = " + n)
 	if (n == "" ) {
 		S.error("Name cannot be blank!")
 	} else {
@@ -32,8 +30,7 @@ class HelloWorld {
    	SHtml.ajaxForm(
 		Helpers.bind("b", in, 
 			"name" -> SHtml.text(name, setName(_)),
-			"submit" -> SHtml.ajaxSubmit("Go", updateResults),
-			"result" -> Text("")
+			"submit" -> SHtml.ajaxSubmit("Go", updateResults)
 		)
 	)
   }

@@ -6,10 +6,10 @@
   
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.lifttest</groupId>
-  <artifactId>lift-errmsgtest3</artifactId>
+  <artifactId>lift-errmsgtest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  <name>lift-errmsgtest3 Project</name>
+  <name>lift-errmsgtest Project</name>
   <inceptionYear>2010</inceptionYear>
   <properties>
   	<scala.version>2.8.1</scala.version>
